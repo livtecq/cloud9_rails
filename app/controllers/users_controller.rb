@@ -4,6 +4,9 @@ class UsersController < ApplicationController
     # render plain: 'Hello, World!'
     
     # Controllerの値をViewに渡す
-    @num = 10 + 1
+    # @num = 10 + 1
+    
+    # データベースの値をWebページに表示 
+    @users = User.all
   end
 end
